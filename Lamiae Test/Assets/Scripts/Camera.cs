@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Camera : MonoBehaviour
 {
-   public static Transform camerafollow ;
+   //public static Transform camerafollow ;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,8 +14,8 @@ public class Camera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
-        
-         transform.position=new Vector3(transform.position.x,transform.position.y, camerafollow.position.z-17.96f);
+
+        if (Guid.l.Count >= 1)
+            transform.position = new Vector3(transform.position.x, transform.position.y, Guid.l[0].transform.position.z - 17.96f) ;
     }
 }
