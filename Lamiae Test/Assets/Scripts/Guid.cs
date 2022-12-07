@@ -28,6 +28,7 @@ public class Guid : MonoBehaviour
         {
             l.Remove(l[j]);
         }
+       Debug.Log(l.Count);
         textScoe = GameObject.FindGameObjectWithTag("score").GetComponent<Text>();
         scoreK = 0;
         rd = GetComponent<Rigidbody>();
