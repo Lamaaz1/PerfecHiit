@@ -20,10 +20,11 @@ public class Guid : MonoBehaviour
     float i = 8;
     Rigidbody rd;
     Transform t;
-    public static int pos = 2;
+    public static int pos;
     // Start is called before the first frame update
     void Start()
     {
+        pos=2;
         for(int j=0; j <l.Count;i++)
         {
             l.Remove(l[j]);
